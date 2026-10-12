@@ -378,3 +378,16 @@ uint16_t get_flow_tap_term(uint16_t keycode, keyrecord_t *record, uint16_t prev_
     }
     return 0;
 }
+
+#ifdef CONSOLE_ENABLE
+// CUSTOM (not from Oryx): key event log for scripts/keylog in i3-dotfiles.
+// P = physical press/release before tap-hold logic, D = what it was resolved to.
+bool pre_process_record_user(uint16_t keycode, keyrecord_t *record) {
+    uprintf("KL P %u %u,%u %04X %u\n", record->event.pressed, record->event.key.row, record->event.key.col, keycode, record->event.time);
+    return true;
+}
+
+void post_process_record_user(uint16_t keycode, keyrecord_t *record) {
+    uprintf("KL D %u %u,%u %04X %u %u\n", record->event.pressed, record->event.key.row, record->event.key.col, keycode, record->tap.count, timer_read());
+}
+#endif
