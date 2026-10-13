@@ -1,4 +1,4 @@
-#define FLOW_TAP_TERM 95
+#define FLOW_TAP_TERM 70
 #define CHORDAL_HOLD
 #undef TAPPING_TERM
 #define TAPPING_TERM 180
@@ -6,7 +6,7 @@
 #define PERMISSIVE_HOLD
 
 #define USB_SUSPEND_WAKEUP_DELAY 0
-#define SERIAL_NUMBER "qQNzK/pjMeRG"
+#define SERIAL_NUMBER "qQNzK/m57o3P"
 #define LAYER_STATE_8BIT
 #define COMBO_COUNT 3
 

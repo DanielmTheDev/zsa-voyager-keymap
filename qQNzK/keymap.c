@@ -16,13 +16,13 @@ enum tap_dance_codes {
   DANCE_1,
 };
 
-#define DUAL_FUNC_0 LT(1, KC_F20)
-#define DUAL_FUNC_1 LT(11, KC_Y)
-#define DUAL_FUNC_2 LT(13, KC_R)
-#define DUAL_FUNC_3 LT(13, KC_O)
-#define DUAL_FUNC_4 LT(14, KC_F8)
-#define DUAL_FUNC_5 LT(13, KC_F14)
-#define DUAL_FUNC_6 LT(8, KC_F24)
+#define DUAL_FUNC_0 LT(5, KC_D)
+#define DUAL_FUNC_1 LT(14, KC_R)
+#define DUAL_FUNC_2 LT(10, KC_F2)
+#define DUAL_FUNC_3 LT(12, KC_N)
+#define DUAL_FUNC_4 LT(10, KC_J)
+#define DUAL_FUNC_5 LT(10, KC_R)
+#define DUAL_FUNC_6 LT(5, KC_8)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT_voyager(
@@ -57,7 +57,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     TD(DANCE_1),    KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, 
     KC_LEFT_GUI,    KC_TRANSPARENT, KC_W,           KC_E,           KC_R,           KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, 
     KC_LEFT_SHIFT,  KC_A,           KC_S,           KC_D,           KC_F,           KC_G,                                           KC_H,           KC_J,           KC_K,           KC_L,           KC_SCLN,        KC_TRANSPARENT, 
-    KC_LEFT_CTRL,   KC_TRANSPARENT, KC_N,           KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, 
+    KC_LEFT_CTRL,   KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, 
                                                     KC_TRANSPARENT, LT(5, KC_TAB),                                  KC_TRANSPARENT, KC_TRANSPARENT
   ),
   [5] = LAYOUT_voyager(
